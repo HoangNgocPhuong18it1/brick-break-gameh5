@@ -19,10 +19,10 @@ class Paddle extends GameObject {
     }
     update(timeStep) {
         if (rightPressed) {
-            this.x += 0.08 * timeStep;
+            this.x += 1 * timeStep;
         }
         else if (leftPressed) {
-            this.x -=  0.08 * timeStep;
+            this.x -=  1 * timeStep;
         }
     }
     clearCanvas() {
