@@ -33,7 +33,7 @@ let secondsPassed = 0;
 let oldTimeStamp = 0;
 
 let lastFrameTimeMs =  0 ,  
-    maxFPS =  144 ; 
+    maxFPS =  75 ; 
 var fps =  60 , 
     framesThisSecond =  0 , 
     lastFpsUpdate =  0 ; 
@@ -116,6 +116,9 @@ function gameLoop(timeStamp) {
 
         window.requestAnimationFrame(gameLoop);
     }
+}
+function panic() {
+    delta = 0;
 }
 
 function detectEdgeCollisions() {   // check left right
