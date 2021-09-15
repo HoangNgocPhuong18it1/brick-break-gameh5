@@ -190,3 +190,22 @@ function keyUpHandler(e) {
         leftPressed = false;
     }
 }
+document.getElementById("fps-up").addEventListener("click", () => {
+    if (maxFPS <144) {
+        maxFPS += 10;
+        console.log(maxFPS);
+    }else{
+        maxFPS = 144;
+        alert("Max FPS is 144");
+    }
+})
+
+document.getElementById("fps-down").addEventListener("click", () => {
+    if (maxFPS >10) {
+        maxFPS -= 10;
+        console.log(maxFPS);
+    }else{
+        maxFPS = 10;
+        alert("Min FPS is 10");
+    }
+})
